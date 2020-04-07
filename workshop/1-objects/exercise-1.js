@@ -21,22 +21,6 @@
 
 //-------------------------------------------------
 
-
-let  myObject = {
-    name :{
-        first:'Leonard',
-        last:'Poissant'
-    },
-    age:'34',
-    city: 'Montreal',
-    siblings: 5,
-    petName: 'Dog-Vader',
-    monthOfBirth: 'March',
-    previousOccupation:'screenwriter',
-    favouriteColor:'green',
-    hobby:'piano',
-}
-
 // Exercise 1.1
 // ------------
 // Add three more key/value pairs to your object that represent other attributes
@@ -65,14 +49,7 @@ let  myObject = {
 
 var favoriteMovie = {
 
-    title:'Heat',
-    director: 'Paul',
-    releaseDate:'1998',
-    rating:'9/10',
-    actors:['Pacino', 'Kilmer','DeNiro'],
-    }
-
-
+}
 
 
 //-------------------------------------------------
@@ -90,9 +67,6 @@ const person = {
 
 person[age];    // => 26
 person.key;     // => "Alyssa P. Hacker"
-
-console.log(person.age)
-console.log(person['name'])
 
 
 //-------------------------------------------------
@@ -115,7 +89,7 @@ const alyssa = {
 };
 
 function fullName(person) {
-    concact(person.name[key]);
+    // Your code here
 
 }
 

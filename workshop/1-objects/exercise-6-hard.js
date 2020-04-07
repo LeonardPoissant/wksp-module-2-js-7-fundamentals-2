@@ -21,27 +21,7 @@ var favoriteDessert = {
 
 // Above is an object with the results of a poll.
 // Write a script that outputs the following:
-const dessertsArr = Object.values(favoriteDessert).sort();
-const countedDesserts = {};
-const rankedDesserts = [];
 
-dessertsArr.forEach(dessert =>{
-    let count = 0;
-    dessertsArr.forEach(dup =>{
-        if(dessert === dup) count +=1;
-    });
-    countedDesserts[dessert] = count;
-});
-
-Object.values(countedDesserts).forEach((dessertCount,id)=>{
-    const dessertName = Object.keys(countedDesserts)[id];
-    rankedDesserts.push({
-        dessertName : dessertName,
-        desertCount : dessertCount
-
-    });
-});
-rankedDesserts.sort((a,b)=> a.dessertCount < b.desertCount ? 1 : -1);
 // A)
 // the desserts ranked from most popular to least popular.
 // e.g. 1. <DESSERT_NAME>
@@ -55,6 +35,3 @@ rankedDesserts.sort((a,b)=> a.dessertCount < b.desertCount ? 1 : -1);
 // e.g. - brownies: <NAME>, <NAME>, ...
 //      - ice-cream: <NAME>, <NAME>, <NAME>, ...
 //      ...
-Object.keys(countedDesserts).forEach(dessert =>{
-    
-})
